@@ -135,10 +135,12 @@ body {
 .about-container {
 	display: flex;
 	gap: 30px;
+	text-align: justify;
 }
 
 .about-inner {
 	font-size: 14px;
+	flex: 1 1 20%;
 }
 
 .about-title {
@@ -174,7 +176,7 @@ body {
 }
 
 .do-card {
-	flex: 1 1 33.333%;
+	flex: 1 1 30%;
 
 }
 
