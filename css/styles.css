@@ -32,6 +32,12 @@
 	font-display: swap;
 }
 
+:root {
+	--other-color: #2196F3;
+	--global-color: #FFFFFF;
+	--desc-cards: #757575;
+}
+
 /* GLOBAL CLASSES */
 body {
 	font-family: 'Roboto', sans-serif;
@@ -68,7 +74,7 @@ body {
 }
 
 .header-menu a.active {
-	color: #2196F3;
+	color: var(--other-color);
 }
 
 .header-second-menu {
@@ -85,7 +91,7 @@ body {
 
 .header-menu a:hover,
 .header-second-menu a:hover {
-	color: #2196F3;
+	color: var(--other-color);
 }
 
 
@@ -110,7 +116,7 @@ body {
 	font-weight: 900;
 	font-size: 44px;
 	text-transform: uppercase;
-	color: #fff;
+	color: var(--global-color);
 	letter-spacing: 5px;
 }
 
@@ -118,8 +124,8 @@ body {
 	padding: 14px 46px 15px;
 	font-weight: 700;
 	font-size: 16px;
-	color: #fff;
-	background: #2196F3;
+	color: var(--global-color);
+	background: var(--other-color);
 	border-radius: 4px;
 	cursor: pointer;
 	align-self: center;
@@ -227,7 +233,7 @@ body {
 .team-card-inner {
 	padding: 30px;
 	font-size: 16px;
-	background: #fff;
+	background: var(--global-color);
 }
 
 .team-card-title {
@@ -235,7 +241,7 @@ body {
 }
 
 .team-card-desc {
-	color: #757575;
+	color: var(--desc-cards);
 	margin-top: 10px;
 }
 
@@ -264,10 +270,92 @@ body {
 }
 
 .footer-menu a, .footer-menu p {
-	color: #FFFFFF;
+	color: var(--global-color);
 	text-decoration: none;
 }
 
 .footer-menu a:hover {
-	color: #2196F3;
+	color: var(--other-color);
 }
+
+/*  SECOND PAGE */
+
+.section-portf {
+	padding: 94px 0;
+}
+
+/* MAIN-LINK */
+
+.links-btn {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	
+}
+
+.links-btn button:hover,
+.links-btn button.active {
+	background: var(--other-color);
+	color: var(--global-color);
+}
+
+.link-btn {
+	padding: 6px 27px 6px 26px;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+
+}
+
+/*  MAIN-CARDS */
+
+.all {
+	margin-top: 34px;
+}
+
+.all-border {
+	border: 1px solid #EEEEEE;
+}
+
+.all-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.all-card {
+	flex: 0 1 33.3334%;
+	padding: 15px;
+}
+
+.all-card-link {
+	display: block;
+	height: 294px;
+}
+.all-card-link img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.all-card-inner {
+	padding: 20px 24px;
+	letter-spacing: 1px;
+}
+
+.all-card-title {	
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.all-card-desc {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--desc-cards);
+	line-height: 34px;
+}
+
+
+
