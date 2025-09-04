@@ -293,10 +293,16 @@ body {
 	
 }
 
-.links-btn button:hover,
+/* сделал отдельно что бы box shadow на постоянку не применялся */
 .links-btn button.active {
 	background: var(--other-color);
 	color: var(--global-color);
+}
+
+.links-btn button:hover {
+	background: var(--other-color);
+	color: var(--global-color);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12)
 }
 
 .link-btn {
