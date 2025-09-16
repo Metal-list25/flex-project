@@ -221,10 +221,23 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 100%;
-	background: #F5F4FA;
+	background: #F5F4FA url(../images/feature-1.svg) no-repeat 50% / 70px;
 	height: 120px;
 	border-radius: 4px;
 }
+
+.about-inner:nth-child(2)::before {
+	background-image: url(../images/feature-2.svg);
+}
+
+.about-inner:nth-child(3)::before {
+	background-image: url(../images/feature-3.svg);
+}
+
+.about-inner:nth-child(4)::before {
+	background-image: url(../images/feature-4.svg);
+}
+
 
 .about-title {
 	font-weight: 700;
